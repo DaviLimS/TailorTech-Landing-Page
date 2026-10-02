@@ -9,7 +9,7 @@
 }
 
 .banner {
-    background: linear-gradient(to bottom, #6f0080, white);
+    background: linear-gradient(to bottom, #0143bf, white);
     width: 100%;
     height: 80vh;
 }
@@ -52,13 +52,13 @@
 
 .text_hero p {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #fff7de;
 }
 
 .h1-hero {
     font-size: 54px;
     font-weight: 900;
-    color: #f9faf8;
+    color: #ffe692;
 }
 
 .signup-button {
