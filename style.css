@@ -122,7 +122,6 @@ main {
 .infos {
     text-align: center;
     margin-top: -5rem;
-    margin-bottom: 5vh;
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
@@ -132,6 +131,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap ;
     max-width: 100vw;
     height: 60vh;
 }
@@ -151,13 +151,15 @@ main {
     text-align: center;
     width: 25%;
     height: auto;
+    margin-top: 5rem;
 }
 
-.infos_block p {
+.text_block {
     font-size: 18px;
     font-weight: lighter;
     color: rgb(39, 39, 39);
     margin-top: 4vh;
+    width: 80%;
 }
 
 .quote {
