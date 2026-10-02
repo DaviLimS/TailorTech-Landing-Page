@@ -23,7 +23,12 @@
 }
 
 .logo {
-    font-weight: 700;
+    width: fit-content;
+    height: auto;
+}
+.logo img {
+    width: 5rem;
+    height: 5rem;
 }
 
 .links {
