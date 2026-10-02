@@ -62,6 +62,14 @@
     margin-bottom: 1rem;
 }
 
+.buttons-hero {
+    justify-self: center;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .signup-button {
     display: flex;
     justify-content: center;
