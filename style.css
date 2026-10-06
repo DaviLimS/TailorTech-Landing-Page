@@ -138,9 +138,9 @@ main {
 
 .content img {
     border-radius: 15px;
-    box-shadow: #180036 0px 0px 15px 1.8px;
     width: auto;
-    height: 40vh;
+    height: 20vh;
+    user-select: none;
 }
 
 .infos_block {
@@ -149,17 +149,33 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 25%;
-    height: auto;
+    width: 20%;
+    height: 50vh;
     margin-top: 5rem;
+    border: #adcaff 1px solid;
+    border-radius: 15px;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: #6d6d6d49 4px 3px 10px;
+}
+.infos_block:hover {
+    transform: scale(1.025);
+}
+
+.h_block {
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgb(39, 39, 39);
+    margin-bottom: -2rem;
+    width: 100%;
 }
 
 .text_block {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
     color: rgb(39, 39, 39);
-    margin-top: 4vh;
-    width: 80%;
+    width: 100%;
 }
 
 .quote {
@@ -220,18 +236,88 @@ main {
     justify-self: center;
     align-self: center;
     text-align: center;
-    padding: 2rem;
-    background-color: #e0c7ff;
-    width: 80%;
-    height: 200vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70vh;
     margin-top: 5rem;
-    border-radius: 40px;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 80%;
+    gap: 2rem;
+}
+
+.customL {
+    text-align: center;
+    grid-column: 1 / 2;
+    border: lightblue 1px solid;
+    border-radius: 25px;
+    padding-top: 1rem;
+    font-size: 1.5em;
+    color: rgb(32, 99, 129);
+}
+.customP {
+    text-align: center;
+    grid-column: 2 / 3;
+    border: lightblue 1px solid;
+    border-radius: 25px;
+    padding-top: 1rem;
+    font-size: 1.5em;
+    color: rgb(78, 129, 0);
+}
+.customU {
+    text-align: center;
+    grid-column: 3 / 4;
+    border: lightblue 1px solid;
+    border-radius: 25px;
+    padding-top: 1rem;
+    font-size: 1.5em;
+    color: #5500bd;
+}
+
+.plansText {
+    font-size: medium;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btnOnPlans {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 30%;
+}
+
+hr {
+    border: lightblue 1px solid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plansBtn {
+    font-size:0.7em;
+    width: 10rem;
+    background-color: rgb(255, 64, 64);
 }
 
 .depoiments h1 {
     color: #1b1b1b;
     font-size: 50px;
     font-weight: 400;
+    text-align: start;
+}
+
+.depoiment-p {
+    width: 40%;
+    font-size: 1.2em;
+    color: rgb(54, 16, 16);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .action {
@@ -239,7 +325,7 @@ main {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 15vh;
+    margin-top: 30vh;
     margin-bottom: 15vh;
     width:100%;
     height: 40vh;
@@ -257,7 +343,7 @@ main {
 }
 
 .call {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 1vh;
     font-weight: 400;
 }
@@ -282,9 +368,14 @@ main {
     background-color: #ff0000be;
     color: white;
     border-radius: 10px;
-    border: 1.5px #7300ff solid;
-    box-shadow: #0c0000 0px 0px 10px 1px;
+    border: none;
+    transition: all 0.3s ease-in-out;
 } 
+.call_button:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
 
 
 .footer {
