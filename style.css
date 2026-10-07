@@ -65,7 +65,10 @@
     transform: rotate(280deg);
 }
 
-
+.non-option {
+    text-decoration: line-through;
+    color: rgb(143, 143, 143);
+}
 
 .text-white {
     color: white;
@@ -315,12 +318,17 @@ main {
 }
 
 .plans div {
-    height: 160vh;
-    transition: all 0.3s;
-    cursor: pointer;
+    height: 155vh;
 }
-.plans div:hover {
-    transform: scale(1.01);
+
+.buttons-list {
+    width: 100%;
+    max-height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons-list a {
+    font-size: 18px;
 }
 
 .customL {
@@ -329,8 +337,8 @@ main {
     border: lightblue 1px solid;
     border-radius: 25px;
     padding-top: 1rem;
-    font-size: 1.5em;
-    color: rgb(32, 99, 129);
+    font-size: 2em;
+    color: #242424;
 }
 .customP {
     text-align: center;
@@ -338,8 +346,8 @@ main {
     border: lightblue 1px solid;
     border-radius: 25px;
     padding-top: 1rem;
-    font-size: 1.5em;
-    color: rgb(78, 129, 0);
+    font-size: 2em;
+    color: #242424;
 }
 .customU {
     text-align: center;
@@ -347,8 +355,8 @@ main {
     border: lightblue 1px solid;
     border-radius: 25px;
     padding-top: 1rem;
-    font-size: 1.5em;
-    color: #5500bd;
+    font-size: 2em;
+    color: #242424;
 }
 
 .advantages {
@@ -360,10 +368,24 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.advantageDiv {
+    width: 100%;
+    max-height: 133vh;
+    background-color: rgba(233, 233, 233, 0.726);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .plansText {
     font-size: 18px;
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 16rem;
+    justify-self: center;
+    color: rgb(68, 68, 68);
+    margin-top: 0.5rem;
 }
 
 .btnOnPlans {
@@ -374,7 +396,7 @@ main {
 }
 
 hr {
-    border: lightblue 1px solid;
+    border: rgba(173, 171, 171, 0.37) 1px solid;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
